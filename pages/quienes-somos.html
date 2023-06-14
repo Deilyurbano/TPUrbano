@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiservice CLC</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body>
+
+     <!--NAVBAR-->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                     <!--LOGO-->
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-black p-0 fixed-top" >
+                            <a class="navbar-brand"  href="../index.html" >
+                                <img src="../img/multiservice-banner-horizontal.webp" style="width: 300px; height: 120px;"  alt="logotipo">
+                            </a>
+
+                            <!--BOTON DESPLEGABLE-->
+                            <button class="navbar-toggler mt-5" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#menu" 
+                                aria-controls="menu"
+                                aria-expanded="false"
+                                aria-label="Toogle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!--HiPERVICULOS Y SUS NOMBRES-->
+                            <div class="collapse navbar-collapse fs-4 "  id="menu" >
+                                <ul class="navbar-nav ms-auto " >
+                                    <li class="nav-item me-5"><a class="nav-link" href="../index.html">Inicio</a></li>
+                                    <li class="nav-item me-5"><a class="nav-link" href="../pages/servicios.html">Servicios</a></li>
+                                    <li class="nav-item me-5"><a class="nav-link" href="../pages/beneficios.html">Beneficios</a></li>
+                                    <li class="nav-item me-5"><a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a></li>
+                                    <li class="nav-item me-5"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+            <!--PANTALLA DIVIDIDA "TEXTO, IMAGEN"-->
+        <div class="card" style=" width: 100%;">
+            <div class="row g-0 align-items-center" style="background-color: #FFA927;">
+                <div class="col-md-6">
+                    <div class="card-body fs-5">
+                        <h1 class="titulo1 mb-4">QUIENES SOMOS</h1>
+                        <p class="parrafo-1 mb-4">Multiservice CLC es una empresa conformada por personal especializado en distintos rubros de la construcción con el objetivo de ayudarte a realizar las reparaciones que necesitas de manera eficiente.</p>
+                        <p class="parrafo-2 mb-5">Nuestro compromiso es ser Responsables, Prolijos y Amables. Esperamos poder ayudarte.</p>
+                        <p class="parrafo-3  fst-italic">Carlos Luis Castillo Fundador de Multiservice CLC</p>
+                        <button class="btn">CONTACTANOS</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../img/nosotros.webp" class="img-fluid" alt="...">
+                </div>
+              
+            </div>
+        </div>
+
+                <!--CARRUSEL-->
+        <div class="row g-0">
+            <div class="col">
+                <div id="carouselnosotros" class="carousel carousel-dark slide">
+                    <!--IMAGENES DEL CARRUSEL-->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../img/comentario1.webp" class="d-block w-100 h-100">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img  src="../img/comentario2.webp" class="d-block w-100 h-100" >
+                        
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/comentario3.webp" class="d-block w-100 h-100">
+                    </div>
+                    <!--BOTONES DE DIRECCION-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselnosotros" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselnosotros" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--PIE DE PAGINA-->
+    <footer class="footer" >
+        <small>&copy; 2023 Creado por Multiservice CLC</small>
+    </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

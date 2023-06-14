@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+
+body {
+    font-family: 'Poiret One', cursive, helvetica;
+    width:100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 120px;
+}
+
+
+.nav-link{
+    color: #FFA927;
+}
+
+
+/*PAGINA DE INICIO*/
+.carousel-item{
+    width: 100%;
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*PAGINA DE SERVICIOS*/
+
+/*POSICION, MARGEN Y DISTRIBUCION DE PAG SERVICIOS*/
+.container-service {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2 1fr);
+    justify-items: center;
+    gap: 10px;
+    margin-top: 50px; 
+    row-gap: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+/*ANCHO Y ALTO DE IMAGENES DE PAG SERVICIOS*/
+.contenedor-serv img {
+    width: 100%;
+    height: 500px;
+    border-radius: 7px;
+}
+
+.text-serv{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+/* BOTONES DE PAG SERVICIOS*/
+.contenedor-serv .btn {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 300ms;
+    margin-bottom: 10px ;
+}
+
+
+.contenedor-serv .btn:hover {
+    color: #FFA927;
+}
+
+
+.contenedor-serv {
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+
+.contenedor-serv:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+    transform: translateY(-3%);
+}
+
+
+
+/*PAGINA BENEFICIOS*/
+
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:40rem;
+	width: 100%;
+	position: relative
+}
+
+.texto-interior{
+	color:#fff;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	top:40%;
+	width: 80%
+}
+
+.texto-interior h2{
+    font-size: 50px;
+}
+
+
+.texto p{
+	font-size: 1.2rem;
+	margin:0px 0px 24px 0px
+}
+
+
+
+.img-uno{
+    background-image: url(../img/bannerasesoramiento.webp)
+}
+
+
+.img-dos{
+    background-image:url(../img/bannerplaneamiento.webp)
+}
+
+
+.img-tres{
+    background-image:url(../img/bannerconfiabilidad.webp)
+}
+
+
+.img-cuarto{
+    background-image: url(../img/bannersoluciones.webp);
+}
+
+
+.texto{
+	padding:5%;
+	width: 90%
+}
+
+
+
+/*PAGINA DE QUIENES SOMOS*/
+
+.btn {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 300ms;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    color:#FFA927;
+}
+
+
+
+/* PAGINA DE CONTACTO*/
+
+.container-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: #FFA927;
+}
+
+
+/*DATOS DE LA EMPRESA, CONTACTO */
+ 
+.info-contac {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: #FFA927;
+    padding-left: 40px;
+    line-height: 2.5em;
+    border: solid;
+    margin: 50px 0px 5px 10px ;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.info-contac a{
+    color:#FFA927;
+}
+
+.container-form p {
+    margin-right: 100px; 
+}
+
+/*REGISTRITO DE DATOS DEL CLIENTE, FORMULARIO*/
+ 
+.info-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: white;
+    line-height: 3em;
+    padding-left: 30px;
+    border: solid white; 
+    margin: 50px 10px 10px 0px ;
+    border-radius: 10px;
+}
+
+.info-formulario h3 {
+    margin-top: 50px;
+}
+
+label{
+    font-size: 20px;
+}
+
+
+input {
+    display: flex; 
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 10px;    
+ }
+ 
+
+.campo {
+    width: 50%;
+    font-size: 20px;
+    border: solid 1px #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0px;
+}
+
+
+textarea {
+    width: 50%;
+    display: flex;
+    font-size: 20px;
+    line-height: 2;
+     margin-top: 10px; 
+    border: solid 1px #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+
+/* BOTON PARA ENVIAR REGISTRO*/
+.info-formulario .btn {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms;
+    margin-block-end: 35px;
+}
+
+
+.info-formulario .btn:hover {
+    color: #FFA927;
+}
+
+
+/*PIE DE PAGINA*/
+.pie-pagina {
+    width: 100%;
+    background-color:black;
+}
+
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 300px;
+    padding-right: 100px; 
+}
+
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #FFA927;
+    margin-bottom: 25px;
+    font-size: 20px; 
+}
+
+
+.pie-pagina .grupo-1 .box p {
+    color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #FFA927;
+}
+
+
+.pie-pagina .grupo-2 {
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: #FFA927;
+}
+
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+
+/* MEDIAS QUERY*/
+
+@media screen and (max-width:1200px){
+    .carousel-item{
+        width: 100%;
+        height: 35rem;
+    }
+
+    .container-service {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .parallax{
+        background-size:  cover;
+        height:35rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .container-form {
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr;
+        background-color: #FFA927;
+    }
+
+    .info-contac {
+        width: 99%;
+        height: 600px;
+        padding-left: 40px;
+        line-height: 2.5em;
+        margin: 50px 10px 0px 5px ;
+    }
+
+
+    .info-formulario {
+        width: 98%;
+        line-height: 2.5em;
+        padding-left: 40px;
+        margin: 0px 0px 30px 10px ;
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        padding: 35px 0px;
+    }
+
+    .pie-pagina .box figure a img{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:720px){
+    .carousel-item{
+        height: 15rem;
+        background-size: 100%;
+    }
+
+    .container-service {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 10px;
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .parallax{ 
+        height:25rem;
+        width: 100%;
+    }
+
+    .texto-interior h2{
+        font-size: 30px;
+    }
+    
+    .texto p{
+        font-size: 1rem;
+        margin:0 0 24px 0
+    }
+
+    .texto-interior{
+        color:#fff;
+        font-weight: bold;
+        left: 10%;
+        text-align: center;
+        width: 80%
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 10px;    
+    }
+}
+
+
+
+@media screen and (max-width:425px){
+    .carousel-item{
+        height: 13rem;
+        background-size: 100%;
+    }
+
+    .container-service img {
+        height: 400px;
+    }
+
+    .container-service article {
+        width: 90%;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .parallax{
+        height:20rem;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .texto-interior h2{
+        font-size: 30px;
+    }
+    
+    .texto p{
+        font-size: 1rem;
+        margin:0 0 24px 0
+    }
+
+    .pie-pagina .grupo-1 {
+        text-align: center;   
+    } 
+}
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: #FFA927;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
